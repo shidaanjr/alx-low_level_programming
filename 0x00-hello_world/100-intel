@@ -1,2 +1,2 @@
 #!/bin/bash
-nasm -f elf64 -g -F dwarf $CFILE -o "${CFILE%.*}.o" && gcc -no-pie "${CFILE%.*}.o" -o "${CFILE%.*}"
+nasm -f elf64 -g -F dwarf $CFILE -o "${CFILE%.*}.o" && objdump -d "${CFILE%.*}.o" | sed -n '/<main>/,/^$/p' > "${CFILE%.*}.s"
