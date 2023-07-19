@@ -4,7 +4,7 @@
  *
  * Return: Always 0 (Success)
  */
-int mainb(viod) {
+int main(viod) {
     printf("_putchar\n");
     return 0;
 }
