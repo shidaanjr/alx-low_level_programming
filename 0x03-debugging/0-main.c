@@ -1,12 +1,16 @@
 #include "main.h"
 
 /**
- * _isupper - checks for uppercase character
- *  @c: input that is going to be checked
- * Return: 1 if @c is uppercase, otherwise 0
-**/
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
 
-int _isupper(int c)
+int main(void)
 {
-	return (c >= 'A' && c <= 'Z');
+	int i;
+
+	i = 0;
+	positive_or_negative(i);
+
+	return (0);
 }
